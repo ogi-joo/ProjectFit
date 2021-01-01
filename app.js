@@ -2,12 +2,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send('f');
-});
+const routeExercise = require('./routes/exercise');
 
-mongoose.connect('mongodb://root:pJ]9ReK{vW1HQWBo@136.244.81.175:27017/?authSource=admin', () => {
+app.use('/vezba', routeExercise);
+
+/*mongoose.connect('mongodb+srv://root:ogiogi123@cluster0.jhh6l.mongodb.net/<dbname>?retryWrites=true&w=majority', () => {
     console.log('connected')
-});
+}); */
 
 app.listen('3000')
