@@ -1,17 +1,17 @@
 const mongoose =  require('mongoose');
 
 const VezbaSchema = mongoose.Schema({
-    title = {
+    title :{
         type: String,
-        required = true
+        required : true
     },
-    description = {
+    description :{
         type: String,
-        required = true
+        required : true
     },
-    muscle = {
+    muscle :{
         type: String,
-        required = true
+        required : true
     }
 });
 
