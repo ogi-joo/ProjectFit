@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.send('f');
 });
 
-mongoose.connect('mongodb://root:pJ]9ReK{vW1HQWBo@136.244.81.175:27017/?authSource=admin', () => {
+mongoose.connect('', () => {
     console.log('connected')
 });
 
